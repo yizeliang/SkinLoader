@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.yzl.skinloader.config.SkinConst;
+import cn.yzl.skinloader.config.SkinConfig;
 
 /**
  * Created by YZL on 2017/2/4.
@@ -26,7 +26,7 @@ public class SkinAttrSupport {
 
                     String resName = context.getResources().getResourceEntryName(id);
 
-                    if (resName.startsWith(SkinConst.SKIN_PREFIX)) {
+                    if (resName.startsWith(SkinConfig.getSkinConfig().getSKIN_PREFIX())) {
                         skinAttrType = getSupportAttrType(attrName);
                         if (skinAttrType != null) {
                             attrList.add(new SkinAttr(resName,skinAttrType));

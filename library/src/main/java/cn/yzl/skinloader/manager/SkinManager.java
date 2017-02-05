@@ -35,6 +35,7 @@ public class SkinManager {
     private String curSuffix;
 
     public SkinManager() {
+
     }
 
     public static void init(Context context) {
